@@ -1,0 +1,177 @@
+/* -------  General Styles ------- */
+
+body {
+  display: flex;
+  flex-grow: inherit;
+  flex-direction: column;
+  font-family: "Lato", sans-serif;
+  color: #6b1a22;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0 10px 15px 10px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 0;
+  font-size: 14px;
+}
+
+section {
+  padding: 20px;
+}
+
+section.alternate-background {
+  background-color: #a35766;
+  color: #ecdbc9;
+}
+
+main img {
+  width: 100%;
+}
+
+/* ---  Groups & Items --- */
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+
+/* -------  Navigation ------- */
+
+header {
+  background-color: #83092e;
+  padding: 20px 20px 0 0;
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  font-family: "Tangerine", cursive;
+  font-size: 72px;
+  padding: 0 20px;
+  color: #ecdbc9;
+  justify-content: center;
+}
+
+header nav ul li {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 5px;
+}
+
+header nav ul li a {
+  color: #ecdbc9;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+ul#menu{
+  padding: 0;
+}
+
+#menu {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* -------  Join Form ------- */
+form {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  border: 2px solid #6b1a22;
+  padding: 10px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+.fill {
+  display: flex;
+  justify-content: space-between;
+}
+
+form select,
+form input {
+  margin-bottom: 20px;
+  width: 180px;
+}
+
+form button {
+  display: flex;
+  background-color: #83092e;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 15px;
+  width: 100%;
+  justify-content: center;
+}
+
+/* -------  Footer ------- */
+
+footer {
+  background-color: #83092e;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* -------  Media Query ------- */
+@media all and (min-width: 480px) {
+ header{
+   padding: 0 20px 0 0px;
+ }
+  header .group {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-size: 30px;
+    text-align: left;
+    align-items: center;
+  }
+
+  .group {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #join img {
+    display: flex;
+    width: 100%;
+  }
+
+
+}
